@@ -1,68 +1,37 @@
-<br />
-<div>
-  <div align="center">
-    <h1 style="font-weight: bold">Mint Your Own NFT Collection (Front-End)</h1>
-    <a href="https://github.com/maweiche/ETH-NFT-minting-site">
-        <img src="./frontend/public/image.png" alt="Logo" style="width: 100%">
-    </a>
-    <br />
-    <br />
-  </div>
-</div>
 
-## Table of Contents
+## buildspace Polygon ENS Mint (Front-End)
 
-- [Table of Contents](#table-of-contents)
-- [Getting Started](#getting-started)
-- [Questions?](#questions)
+![image](/public/image.png)
 
-<br />
+## Welcome 👋
+This is the front-end for a Ethereum NFT mint site. You can see the full project, including how to create and edit the smart contract, on [buildspace](https://buildspace.so/build-nfts).
 
-<!-- ABOUT THE PROJECT -->
-<h2 align="center"> About The Project </h2>
+## How to get things working
+To mint your own NFT on Ethereum, change the following:
 
-<p align="center">
-    This repository consists of front-end code for <a href="https:/buildspace.so/p/mint-nft-collection">Mint Your Own NFT Collection</a>project on Buildspace. Feel free to clone this repository if you wantto start building something awesome!
-    <br />
-    <a href="https://github.com/maweiche/ETH-NFT-minting-siteissues">Report Bugs</a>
-    ·
-    <a href="https://github.com/maweiche/ETH-NFT-minting-siteissues">Request Feature</a>
-</p>
+- Update Contract Address
+- Update Front-End ABI File
 
-<br />
-
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-This is an example of how you can set up your project locally. To get a local copy up and running follow these simple example steps.
-
-1. Clone the repo (Terminal)
-
-```sh
-git clone with HTTPS          https://github.com/maweiche/ETH-NFT-minting-site.git
-git clone with SSH            git@github.com:maweiche/ETH-NFT-minting-site.git
-git clone with Github CLI     gh repo clone maweiche/ETH-NFT-minting-site
+**Contract Address**
+```
+/src/App.js
+const CONTRACT_ADDRESS = "INSERT_YOUR_DEPLOYED_RINKEBY_CONTRACT_ADDRESS";
+```
+**ABI File**
+```
+/src/utils/MyEpicNFT.json
+{
+    "_format": "hh-sol-artifact-1",
+    "contractName": "",
+    "sourceName": "",
+    "abi": [],
+    "bytecode": "",
+    "deployedBytecode": "",
+    "linkReferences": {},
+    "deployedLinkReferences": {}
+}
 ```
 
-2. Development (Choose either yarn or npm)
-
-Yarn
-
-```sh
-1. yarn install         # Install dependencies for project
-2. yarn start           # Starts the app
-```
-
-NPM
-
-```sh
-1. npm install         # Install dependencies for project
-2. npm start           # Starts the app
-```
-
-<br />
 
 ## Questions?
-
 Have some questions make sure you head over to your [buildspace Dashboard](https://buildspace.so/p/mint-nft-collection) and link your Discord account so you can get access to helpful channels and your instructor!
